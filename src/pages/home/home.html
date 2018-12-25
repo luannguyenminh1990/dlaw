@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Trang Chủ</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="main">
+    <div class="content">
+
+        <div class="logo">
+          <img src="../../assets/imgs/logo.png" class="img_logo"/>
+        </div>
+        <ion-grid class="btn_content">
+          <ion-row>
+            <ion-col class="col_btn">
+              <img src="../../assets/imgs/kienthuc.png" class="icon_btn" (click)="KienThuc()">
+            </ion-col>
+            <ion-col class="col_btn">
+              <img src="../../assets/imgs/hoidap.png" class="icon_btn" (click)="HoiDap()">
+            </ion-col>
+            <ion-col class="col_btn">
+              <img src="../../assets/imgs/chiase.png" class="icon_btn" (click)="ChiaSe()">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+  </div>
+</ion-content>
