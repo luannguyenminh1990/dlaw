@@ -17,12 +17,12 @@ export class HomePage {
     //this.checkIfSigned();
   }
   KienThuc(){
-      this.navCtrl.push('DanhMucLuatPage');
+      this.navCtrl.setRoot('DanhMucLuatPage');
   }
   HoiDap(){
-    this.navCtrl.push('HoiDapPage');
+    this.navCtrl.setRoot('HoiDapPage');
   }
   ChiaSe(){
-    this.navCtrl.push('ChiaSePage');
+    this.navCtrl.setRoot('ChiaSePage');
   }
 }

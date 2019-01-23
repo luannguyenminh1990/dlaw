@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavParServiceProvider } from '../../providers/nav-par-service/nav-par-service';
 
 /**
  * Generated class for the ChiTietLuatPage page.
@@ -14,12 +15,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'chi-tiet-luat.html',
 })
 export class ChiTietLuatPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  KIENTHUC: any;
+  constructor(public navCtrl: NavController, 
+    public navParams: NavParams,
+    private navParService: NavParServiceProvider
+    ) {
+  }
+  ngOnInit() {
+    this.KIENTHUC=this.navParService.getter();
+    console.log(this.KIENTHUC);
+    this.LoadComment();
+  
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ChiTietLuatPage');
   }
+  LoadComment()
+  {
 
+  }
 }

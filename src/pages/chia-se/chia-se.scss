@@ -1,3 +1,32 @@
 page-chia-se {
-
+    p{
+        padding: 0;
+        margin: 0;
+    }
+    .content-ios, .main{
+        background: #0f1f2e;
+        background-repeat: repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        flex: 1;
+        height: 100%;
+        color: white;
+    }
+    .like{
+            text-align: right;
+            padding-right: 10px;
+    }
+    .col_content{
+        padding: 10px;
+    }
+    .list_law_share_row
+    {
+        //border: 1px solid #59636d; 
+        background: #59636d;
+        margin: 5px;
+    }
+    .header_share{
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
 }

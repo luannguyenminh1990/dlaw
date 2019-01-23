@@ -1,0 +1,67 @@
+page-hoi-dap-chi-tiet {
+    .content-ios, .main{
+        background: #0f1f2e;
+        background-repeat: repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        flex: 1;
+        height: 100%;
+        color: white;
+    }
+    .item-ios{
+        background: #0f1f2e;
+        color: white;
+    }
+    .item-ios p{
+        color: white !important;
+    }
+    .content{
+        padding: 10px;
+    }
+    ion-label {
+        white-space: normal;
+    }
+
+    .no-comment{
+        padding: 0 10px 10px 10px;
+        color: red;
+   }
+
+   .inputs
+    {
+        margin: 5% 5% 0 5%;
+    }
+    .inputs input{
+        background: #eeeeee;
+        border: 1px solid #aaaaaa;
+        height: 40px;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+    ion-textarea{
+        background: #eeeeee;
+        border: 1px solid #aaaaaa;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        margin-top: 10px;
+        color: #000000;
+    }
+    .btn
+    {
+        margin:0 auto;
+        text-align: center;
+    }
+    .btn button{
+        height: 40px;
+        border-radius: 10px;
+        width: 90%;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+}

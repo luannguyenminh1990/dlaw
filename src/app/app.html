@@ -6,6 +6,17 @@
   </ion-header>
 
   <ion-content>
+    <div class="header">
+        <div class="logo">
+            <img src="../../assets/imgs/logo.png" class="img_logo"/>
+        </div>
+        <div class="information">
+         <b><p>Ứng dụng trợ giúp pháp lý <br/>
+          Cho người khuyết tật (DLAW)
+          </p></b> 
+          <p>info@khuyettat.vn</p>
+        </div>
+    </div>
     <ion-list>
         <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
           {{p.title}}
@@ -16,4 +27,4 @@
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
-<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+<ion-nav [root]="rootPage" #content></ion-nav>

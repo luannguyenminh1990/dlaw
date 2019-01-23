@@ -1,7 +1,21 @@
 page-home {
+
     ion-title{
         //text-align: center;
         padding-left: 30%;
+    }
+
+    header, ion-navbar, ion-header, .header-ios, .header-ios .toolbar-ios:last-child .toolbar-background-ios
+    {
+        background: #f7d31b;
+        color: #fff;
+    }
+    .toolbar-title-ios, .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default
+    {
+        color: #fff;
+    }
+    .header{
+        background: #36812b;
     }
     .main{
         background: #0f1f2e;

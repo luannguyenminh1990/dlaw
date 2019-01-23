@@ -1,0 +1,15 @@
+page-chia-se-chi-tiet {
+    .content-ios, .main{
+        background: #0f1f2e;
+        background-repeat: repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        flex: 1;
+        height: 100%;
+        color: white;
+    }
+    .like{
+        float: right;
+        margin: 0 20px 20px 0;
+    }
+}

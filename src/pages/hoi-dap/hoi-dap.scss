@@ -1,6 +1,21 @@
 page-hoi-dap {
-    .comment{
-            text-align: 40px;
+    .content-ios,.main{
+        background: #0f1f2e;
+        background-repeat: repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        flex: 1;
+        height: 100%;
+        color: white;
     }
+    .comment{
+            text-align: right;
+            padding-right: 10px;
+    }
+    .list_law_question_row
+    {
+        border-bottom: 2px solid white; 
+    }
+
 
 }

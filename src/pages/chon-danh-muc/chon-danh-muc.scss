@@ -1,0 +1,29 @@
+page-chon-danh-muc {
+    .content-ios,.main{
+        background: #0f1f2e;
+        background-repeat: repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        flex: 1;
+        height: 100%;
+        color: white;
+    }
+    .col_content h4{
+        margin: 0;
+    }
+    .col_content p{
+        margin: 0;
+        padding-top: 5px;
+    }
+    .list_law_row{
+        border-bottom: 2px solid white; 
+    }
+    .max-lines {
+        display: block; /* or inline-block */
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 3em;
+        
+      }
+}

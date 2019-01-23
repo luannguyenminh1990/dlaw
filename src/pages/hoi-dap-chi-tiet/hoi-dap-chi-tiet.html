@@ -1,0 +1,64 @@
+<!--
+  Generated template for the HoiDapChiTietPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Chi tiết hỏi đáp</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="main">
+    <div class="content">
+      <div class="details">
+        <h6>{{KIENTHUC.cau_hoi}}</h6>
+        <p [innerHTML]="KIENTHUC.noi_dung_chi_tiet"></p>
+      </div>
+      <div class="comment">
+        <h6>Comment</h6>
+        <!--*ngFor="let comment of Comments"-->
+        <div *ngIf="!COMMENTS == undefined || COMMENTS.length == 0" class="no-comment">
+            <i><p>* Chưa có bình luận nào cho câu hỏi này!</p></i>
+        </div>
+        <ion-item  no-lines *ngFor="let comment of COMMENTS">
+            <ion-grid>
+                <ion-row class="comment-boder">
+                  <ion-col col-2 class="comment-img">
+                      <div class="avata">
+                        <img src="http://khuyettat.vn/Admin/public/images/nguoi_dung/{{comment.image}}">
+                      </div>
+                  </ion-col>
+                  <ion-col col-10 class="comment-info">
+                      <p class="content_cm">{{comment.noi_dung}}</p>
+                      <i><p>{{comment.fullname}} | {{comment.unit}} | {{comment.ngay_binh_luan}}</p></i>
+                  </ion-col>
+                </ion-row>
+              </ion-grid> 
+          </ion-item>
+        <div class="add_comment" *ngIf="USER; else NotUser">
+          <div class="inputs">
+            <label>Nội dung bình luận:</label><br/>
+            <ion-textarea #noidung rows="10" maxLength="2500"></ion-textarea>
+          </div>
+          <div class="btn">
+            <button (click)="themBinhLuan(noidung.value, KIENTHUC.ma_kien_thuc)">Gửi Bình Luận</button>
+          </div>
+        </div>
+
+        <ng-template #NotUser>
+          <div class="btn">
+            <button (click)="loginToComment()">Đăng nhập để bình luận</button>
+          </div>
+        </ng-template>
+
+      </div>
+    </div>
+  </div>
+
+</ion-content>

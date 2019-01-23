@@ -7,12 +7,38 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>ChiaSe</ion-title>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title></ion-title>
+    <div class="search">
+      <ion-searchbar #search_cs (ionChange)="search(search_cs.value)"></ion-searchbar>
+  </div>
+  <ion-buttons end>
+      <button ion-button (click)="addNew()">
+        <ion-icon name="add"></ion-icon>New
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+  <div class="main">
+    <div class="content">
+      <ion-grid class="item_list_law">
+        <ion-row class="list_law_share_row" *ngFor="let KIENTHUC of KIENTHUCS; let id = index" (click)='ViewDetails(KIENTHUC)'> 
+          <ion-col class="col_content">
+            <p class="header_share" [innerHTML]="KIENTHUC.cau_hoi"></p>
+            <p [innerHTML]="KIENTHUC.noi_dung_tom_tat"></p>
+            <div class="like">
+              <span>{{KIENTHUC.luot_thich}}</span>
+              <span> like</span>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
 </ion-content>

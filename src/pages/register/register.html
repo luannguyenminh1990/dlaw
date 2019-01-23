@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Đăng ký</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content >
+  <div class="main" text-center >
+  
+    <div class="logo"><img src="../../assets/imgs/logo.png"/></div>
+      
+      <div class="inputs">
+        <input #email required type="text" placeholder="Email" value="">
+        <input #pw required type="password" placeholder="Mật khẩu" value="">
+        <input #fullname required type="text" placeholder="Họ và tên" value="">
+      </div>
+      <div class="btn">
+        <button (click)="register(email.value,pw.value, fullname.value)">Đăng Ký</button>
+        <button >Huỷ bỏ</button>
+      </div>
+    
+    </div>
+
+</ion-content>

@@ -37,7 +37,7 @@ $colors: (
   primary:    #488aff,
   secondary:  #32db64,
   danger:     #f53d3d,
-  light:      #f4f4f4,
+  light:      #f7d31b,
   dark:       #222
 );
 
@@ -86,3 +86,36 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+header, ion-navbar, ion-header, .header-ios, .header-ios .toolbar-ios:last-child .toolbar-background-ios
+{
+    background: #f7d31b;
+    color: #fff;
+}
+.toolbar-title-ios, .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default
+{
+    color: #fff;
+}
+.header{
+    background: #36812b;
+}
+.logo{
+    
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0 10px 0;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.information{
+    color: #fff;
+    text-align: center;
+}
+.information p{
+    padding-bottom: 10px;
+}

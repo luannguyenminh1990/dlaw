@@ -7,7 +7,18 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>HoiDap</ion-title>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title></ion-title>
+    <div class="search">
+        <ion-searchbar #search_hd (ionChange)="search(search_hd.value)"></ion-searchbar>
+    </div>
+    <ion-buttons end>
+        <button ion-button (click)="addNew()">
+          <ion-icon name="add"></ion-icon>New
+        </button>
+      </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -16,13 +27,14 @@
 <ion-content>
   <div class="main">
     <div class="content">
+        
       <ion-grid class="item_list_law">
-        <ion-row class="list_law_question_row"> 
-          <ion-col class="col_content" col-10>
-            <p>Noi dung hoi dap o day</p>
+        <ion-row class="list_law_question_row" *ngFor="let KIENTHUC of KIENTHUCS; let id = index" (click)='ViewDetails(KIENTHUC)'> 
+          <ion-col class="col_content">
+            <h6>{{KIENTHUC.cau_hoi}}</h6>
             <div class="comment">
               <ion-icon ios="ios-chatbubbles" md="md-chatbubbles"></ion-icon>
-              <span>2</span>
+              <span>{{KIENTHUC.dem}}</span>
             </div>
             
           </ion-col>

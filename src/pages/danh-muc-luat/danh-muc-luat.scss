@@ -1,5 +1,5 @@
 page-danh-muc-luat {
-    .main{
+    .content-ios,.main{
         background: #0f1f2e;
         background-repeat: repeat;
         background-size: 100% 100%;
@@ -18,4 +18,12 @@ page-danh-muc-luat {
     .list_law_row{
         border-bottom: 2px solid white; 
     }
+    .max-lines {
+        display: block; /* or inline-block */
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 3em;
+        
+      }
 }
